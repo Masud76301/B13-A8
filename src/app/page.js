@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <div className="container mx-auto h-140  mt-10 bg-linear-to-b from-green-950 to-green-600 flex flex-col items-center gap-4 text-center justify-center">
 
-      <p className="bg-transparent shadow-xl rounded-3xl border border-white w-[25%] mx-auto text-white p-1 mt-10 text-center">Eid ul-Adha 2026 — Bookings Open</p>
+      <span className="bg-transparent text-[14px] font-semibold shadow-xl rounded-3xl border border-white mx-auto text-white px-4 py-2 mt-10 text-center">Eid ul-Adha 2026 — Bookings Open</span>
 
       <h1 className="text-6xl text-white font-bold">Premium Livestock for <br />
         <span className="text-amber-300">Qurbani</span></h1>

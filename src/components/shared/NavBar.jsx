@@ -3,6 +3,7 @@
 import { authClient } from '@/lib/auth-client';
 import { Avatar, AvatarFallback, AvatarImage, Button } from '@heroui/react';
 import Link from 'next/link';
+import { GiGoat } from 'react-icons/gi';
 
 
 const NavBar = () => {
@@ -17,8 +18,8 @@ const NavBar = () => {
         <div className='bg-white shadow h-16 p-3 '>
             <div className=' container mx-auto flex justify-between items-center '>
                 {/* Logo */}
-                <div>
-                    <h1 className='text-2xl font-bold text-green-600 '>QuarbaniHat</h1>
+                <div className=''>
+                    <h1 className='text-2xl font-bold text-green-600 flex gap-2 items-center justify-center '><GiGoat className='text-3xl'></GiGoat> QuarbaniHat</h1>
                 </div>
 
                 {/* Link */}

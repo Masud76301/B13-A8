@@ -1,8 +1,12 @@
 "use client";
+import GoogleLogin from "@/components/GoogleLogin";
 import { authClient } from "@/lib/auth-client";
 import { Check } from "@gravity-ui/icons";
-import { Button, Description, FieldError, Form, Input, Label, TextField } from "@heroui/react";
+import { Button, Description, FieldError, Form, Input, Label, Separator, TextField } from "@heroui/react";
+import Link from "next/link";
 import { useForm } from "react-hook-form";
+import { FaCow } from "react-icons/fa6";
+import { GiGoat } from "react-icons/gi";
 import { toast } from "react-toastify";
 
 const LoginPage = () => {
@@ -24,7 +28,10 @@ const LoginPage = () => {
         }
     }
     return (
-        <div className="w-[40%] h-[40vh] m-auto border rounded-sm shadow-md p-4 ">
+        <div className=" m-auto border rounded-sm shadow-md py-6 px-10 ">
+            <GiGoat className="flex justify-center w-10 mx-auto text-4xl text-green-600"/>
+            <h1 className="text-center text-green-600 font-bold text-3xl">QuarbaniHat</h1>
+            <p className="text-center mt-1">Login to your account</p>
             <Form className="flex w-96 flex-col gap-4 m-auto mt-10" onSubmit={handleSubmit(handleLoginFun)}>
                 <TextField
                     isRequired
@@ -67,13 +74,19 @@ const LoginPage = () => {
                 <div className="flex gap-2">
                     <Button type="submit">
                         <Check />
-                        Submit
+                        Login
                     </Button>
                     <Button type="reset" variant="secondary">
                         Reset
                     </Button>
                 </div>
             </Form>
+            <h1 className="text-center my-3"> - or continue with - </h1>
+             <GoogleLogin></GoogleLogin>
+            <p className="text-center">Don't have an account? <Link href="/register" className="text-green-600 font-semibold">Register here</Link></p>
+            
+            
+           
         </div>
     );
 };

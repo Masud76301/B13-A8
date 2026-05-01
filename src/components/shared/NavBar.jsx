@@ -36,10 +36,13 @@ const NavBar = () => {
 
                         (
                             <div className='flex gap-2 items-center'>
-                                <Avatar size="sm">
-                                    <AvatarImage src={user.image} referrerPolicy='no-referrer' />
-                                    <AvatarFallback>{user?.name.charAt(0)}</AvatarFallback>
-                                </Avatar>
+                                <Link href="/profile">
+                                    <Avatar size="sm">
+                                        <AvatarImage src={user.image} referrerPolicy='no-referrer' />
+                                        <AvatarFallback>{user?.name.charAt(0)}</AvatarFallback>
+                                    </Avatar>
+                                </Link>
+
                                 <Button onClick={handleSingOut} size="sm" variant='outline' className='hover:bg-red-500 hover:text-white rounded-md'>Logout</Button>
                             </div>
                         ) : (

@@ -9,7 +9,7 @@ export default function Home() {
       <span className="bg-transparent text-[14px] font-semibold shadow-xl rounded-3xl border border-white mx-auto text-white px-4 py-2 mt-10 text-center">Eid ul-Adha 2026 — Bookings Open</span>
 
       <h1 className="text-6xl text-white font-bold">Premium Livestock for <br />
-        <span className="text-amber-300">Qurbani</span></h1>
+        <span className="text-amber-300">Qurbani Hat</span></h1>
       <p className="text-white font-semibold text-center">Browse, book, and arrange pickup of certified healthy animals <br />from trusted local farms.</p>
 
       <div className="flex gap-2">

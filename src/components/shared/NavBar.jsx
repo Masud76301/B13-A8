@@ -27,6 +27,7 @@ const NavBar = () => {
                     <ul className='space-x-2'>
                         <Link href="/"><Button size="sm" variant='outline' className='hover:bg-amber-50 rounded-md'>Home</Button></Link>
                         <Link href="/all-animal"><Button size="sm" variant="outline" className='hover:bg-amber-50 rounded-md'>All Animals</Button></Link>
+                        <Link href="/profile"><Button size="sm" variant="outline" className='hover:bg-amber-50 rounded-md'>Profile</Button></Link>
                     </ul>
                 </div>
 

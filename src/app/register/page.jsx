@@ -3,6 +3,7 @@
 import { authClient } from "@/lib/auth-client";
 import { Check } from "@gravity-ui/icons";
 import { Button, Description, FieldError, Form, Input, Label, TextField } from "@heroui/react";
+import Link from "next/link";
 import { useForm } from "react-hook-form";
 import { toast } from "react-toastify";
 
@@ -26,7 +27,12 @@ const RegisterPage = () => {
         }
     }
     return (
-        <div className="w-[40%] h-auto m-auto bg-slate-200 shadow-md p-10 ">
+        <div className=" h-auto m-auto border shadow-md p-10 ">
+
+            <h1 className="text-center text-green-600 font-semibold text-xl">QurbaniHat</h1>
+            <h1 className="text-2xl font-bold text-center mt-4">Create account</h1>
+            <p className="mb-6 text-[14px] text-center">Join thousands of families for Qurbani </p>
+          
             <Form className="flex w-96 flex-col gap-4 m-auto" onSubmit={handleSubmit(handleRegisterFun)}>
 
                 <TextField
@@ -103,6 +109,8 @@ const RegisterPage = () => {
                     </Button>
                 </div>
             </Form>
+            <p className="text-center mt-5">-or-</p>
+            <p className="text-center">Already have an account? <Link className="text-green-600 font-semibold" href="/login">Login</Link></p>
         </div>
     );
 };

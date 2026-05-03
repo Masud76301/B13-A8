@@ -7,7 +7,7 @@ import Footer from '@/components/Footer';
 
 
 const AllAnimalPage = async() => {
-    const res = await fetch('https://b13-a8-beryl.vercel.app/data.json');
+    const res = await fetch('http://localhost:3000/data.json');
     const animals = await res.json();
    
 

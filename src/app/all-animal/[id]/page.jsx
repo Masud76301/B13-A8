@@ -7,7 +7,7 @@ import { TbCurrencyTaka } from 'react-icons/tb';
 
 const AnimalDetailPage = async ({ params }) => {
     const { id } = await params;
-    const res = await fetch('https://b13-a8-beryl.vercel.app/data.json');
+    const res = await fetch('http://localhost:3000/data.json');
     const animals = await res.json();
     const animal = animals.find(a => a.id == id);
     return (

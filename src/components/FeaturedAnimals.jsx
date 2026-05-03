@@ -2,11 +2,11 @@ import { ArrowRight } from "@gravity-ui/icons";
 import { Button } from "@heroui/react";
 import Link from "next/link";
 import AnimalCard from "./AnimalCard";
-
+import animals from "@/data/data.json";
 
 const FeaturedAnimals = async () => {
-    const res = await fetch('http://localhost:3000/data.json');
-    const animals = await res.json();
+    // const res = await fetch('http://localhost:3000/data.json');
+    // const animals = await res.json();
     const FeaturedAnimals = animals.slice(0, 4);
 
     return (

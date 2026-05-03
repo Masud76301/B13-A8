@@ -1,15 +1,16 @@
 
 import AnimalCard from '@/components/AnimalCard';
 import Footer from '@/components/Footer';
+import animals from "@/data/data.json";
 
 
 
 
 
-const AllAnimalPage = async() => {
-    const res = await fetch('http://localhost:3000/data.json');
-    const animals = await res.json();
-   
+const AllAnimalPage = () => {
+    // const res = await fetch('http://localhost:3000/data.json');
+    // const animals = await res.json();
+    
 
     return (
         <div>

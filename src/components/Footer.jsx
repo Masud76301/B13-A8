@@ -10,11 +10,12 @@ const Footer = () => {
             <div className='container mx-auto justify-items-center grid grid-cols-2 md:grid-cols-4 h-[80%] '>
 
                 <div className='mt-15'>
-                    <h1 className='font-semibold text-xl mb-2'>QurbaniHat</h1>
-                    <p className='text-gray-300'>About us</p>
-                    <p className='text-gray-300'>Our farms</p>
-                    <p className='text-gray-300'>Blog</p>
-                    <p className='text-gray-300'>Careers</p>
+                    <h1 className='font-semibold text-xl mx-2 lg:mx-auto mb-2'>About</h1>
+                    <p className="text-sm lg:mx-auto mx-2 text-gray-200 leading-relaxed">
+                        QurbaniHat is a trusted livestock marketplace connecting families with
+                        certified local farms. We make Qurbani simple, affordable, and
+                        accessible for everyone.
+                    </p>
                 </div>
 
                 <div className='mt-15'>
@@ -29,7 +30,7 @@ const Footer = () => {
                     <h1 className='font-semibold text-xl mb-2'>Contact Us</h1>
                     <p className='text-gray-300 text-[10px] md:text-[14px] flex gap-2 items-center'> <PiPhone></PiPhone> +880 1700-000000</p>
                     <p className='text-gray-300 text-[10px] md:text-[14px] flex gap-2 items-center'><MdEmail></MdEmail>hello@qurbanihat.com</p>
-                    <p className='text-gray-300 text-[10px] md:text-[14px] flex gap-2 items-center'><FaLocationArrow/> Chattogram,Bangladesh</p>
+                    <p className='text-gray-300 text-[10px] md:text-[14px] flex gap-2 items-center'><FaLocationArrow /> Chattogram,Bangladesh</p>
                 </div>
 
                 <div className='mt-15'>
@@ -46,9 +47,9 @@ const Footer = () => {
             <div className='flex flex-col md:flex-row gap-2 md:gap-20 md:items-center lg:justify-between container  lg:mx-auto items-center mt-6'>
                 <h1 className='text-gray-300'>© 2026 QurbaniHat. All rights reserved.</h1>
                 <div className='flex gap-3 text-[16px] lg:text-xl text-gray-300 mb-2'>
-                    <FaFacebook/>
-                    <FaXTwitter/>
-                    <FaInstagram/>
+                    <FaFacebook />
+                    <FaXTwitter />
+                    <FaInstagram />
                 </div>
             </div>
         </div>

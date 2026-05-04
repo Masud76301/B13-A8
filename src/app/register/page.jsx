@@ -5,11 +5,13 @@ import { authClient } from "@/lib/auth-client";
 import { Check } from "@gravity-ui/icons";
 import { Button, Description, FieldError, Form, Input, Label, TextField } from "@heroui/react";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 import { useForm } from "react-hook-form";
 import { toast } from "react-toastify";
 
 const RegisterPage = () => {
     const { register, handleSubmit } = useForm()
+    const router =useRouter();
 
     const handleRegisterFun = async (data) => {
         const { name, email, photo, password } = data;
@@ -18,8 +20,11 @@ const RegisterPage = () => {
             email: email,
             password: password,
             image: photo,
-            callbackURL: "/",
+            
         });
+        if(!error){
+            router.push('/');
+        }
         if (error) {
             toast.error(error.message);
         }

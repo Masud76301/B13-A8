@@ -43,9 +43,9 @@ const Footer = () => {
 
             </div>
             <hr className=' w-[90%] opacity-40  mx-auto mb-2'></hr>
-            <div className='flex flex-col md:flex-row gap-2 md:justify-between container mx-auto items-center mt-6'>
+            <div className='flex flex-col md:flex-row gap-2 md:gap-20 md:items-center lg:justify-between container  lg:mx-auto items-center mt-6'>
                 <h1 className='text-gray-300'>© 2026 QurbaniHat. All rights reserved.</h1>
-                <div className='flex gap-3 text-[16px] md:text-xl text-gray-300 mb-2'>
+                <div className='flex gap-3 text-[16px] lg:text-xl text-gray-300 mb-2'>
                     <FaFacebook/>
                     <FaXTwitter/>
                     <FaInstagram/>

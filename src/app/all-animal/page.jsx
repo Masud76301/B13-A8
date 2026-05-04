@@ -25,8 +25,8 @@ const AllAnimalPage = () => {
         <div>
             <div className='bg-[#EAF3DE]'>
                 <div className='h-30 container mx-auto py-6 '>
-                    <h1 className='text-2xl font-bold text-center md:text-left'>All Animal Page</h1>
-                    <p className='text-center md:text-left'>Browse our complete inventory of certified Qurbani animals</p>
+                    <h1 className='text-2xl font-bold text-center lg:text-left'>All Animal Page</h1>
+                    <p className='text-center lg:text-left'>Browse our complete inventory of certified Qurbani animals</p>
                 </div>
             </div>
 
@@ -46,7 +46,7 @@ const AllAnimalPage = () => {
 
             </div>
 
-            <div className='grid  grid-cols-1 md:gris-cols-2 lg:grid-cols-4 gap-5 my-10 container mx-auto'>
+            <div className='grid  grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 my-10 container mx-auto'>
                 {sortAnimals.map(animal => <AnimalCard key={animal.id} animal={animal}></AnimalCard>)}
             </div>
 

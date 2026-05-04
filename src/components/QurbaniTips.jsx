@@ -11,8 +11,8 @@ const QurbaniTips = () => {
         
         <div className='container mx-auto my-10'>
             <Separator></Separator>
-            <h1 className='text-3xl font-bold text-center md:text-left my-10'>Qurbani Tips</h1>
-            <div className='  grid grid-cols-1 justify-items-center md:grid-cols-3 gap-10'>
+            <h1 className='text-3xl font-bold text-center lg:text-left my-10'>Qurbani Tips</h1>
+            <div className=' md:mx-4 lg:mx-auto grid grid-cols-1 justify-items-center md:grid-cols-2 lg:grid-cols-3 gap-10'>
 
                 <div className='bg-amber-50 p-3 w-[90vw] md:w-auto  shadow border flex flex-col rounded-xl space-y-2'>
                     <FaCheckCircle className='text-xl'></FaCheckCircle>

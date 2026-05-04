@@ -28,11 +28,11 @@ const LoginPage = () => {
         }
     }
     return (
-        <div className=" m-auto border rounded-sm shadow-md py-6 px-10 ">
+        <div className=" w-[90vw] md:w-auto mx-auto border rounded-sm shadow-md py-6 px-10 mt-10 ">
             <GiGoat className="flex justify-center w-10 mx-auto text-4xl text-green-600"/>
             <h1 className="text-center text-green-600 font-bold text-3xl">QuarbaniHat</h1>
             <p className="text-center mt-1">Login to your account</p>
-            <Form className="flex w-96 flex-col gap-4 m-auto mt-10" onSubmit={handleSubmit(handleLoginFun)}>
+            <Form className="flex w-auto md:w-80 lg:w-96 flex-col gap-4 m-auto mt-10" onSubmit={handleSubmit(handleLoginFun)}>
                 <TextField
                     isRequired
                     {...register("email")}

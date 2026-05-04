@@ -1,13 +1,13 @@
-import { LocationArrow } from '@gravity-ui/icons';
+
 import React from 'react';
-import { FaFacebook, FaInstagram, FaXTwitter } from 'react-icons/fa6';
+import { FaFacebook, FaInstagram, FaLocationArrow, FaXTwitter } from 'react-icons/fa6';
 import { MdEmail } from 'react-icons/md';
 import { PiPhone } from 'react-icons/pi';
 
 const Footer = () => {
     return (
-        <div className='h-88 bg-green-700 text-white'>
-            <div className='container mx-auto flex justify-between h-[80%] '>
+        <div className='h-auto md:h-88 bg-green-700 text-white'>
+            <div className='container mx-auto justify-items-center grid grid-cols-2 md:grid-cols-4 h-[80%] '>
 
                 <div className='mt-15'>
                     <h1 className='font-semibold text-xl mb-2'>QurbaniHat</h1>
@@ -27,9 +27,9 @@ const Footer = () => {
 
                 <div className='mt-15'>
                     <h1 className='font-semibold text-xl mb-2'>Contact Us</h1>
-                    <p className='text-gray-300 flex gap-2 items-center'> <PiPhone></PiPhone> +880 1700-000000</p>
-                    <p className='text-gray-300 flex gap-2 items-center'><MdEmail></MdEmail>hello@qurbanihat.com</p>
-                    <p className='text-gray-300 flex gap-2 items-center'><LocationArrow></LocationArrow>Chattogram,Bangladesh</p>
+                    <p className='text-gray-300 text-[10px] md:text-[14px] flex gap-2 items-center'> <PiPhone></PiPhone> +880 1700-000000</p>
+                    <p className='text-gray-300 text-[10px] md:text-[14px] flex gap-2 items-center'><MdEmail></MdEmail>hello@qurbanihat.com</p>
+                    <p className='text-gray-300 text-[10px] md:text-[14px] flex gap-2 items-center'><FaLocationArrow/> Chattogram,Bangladesh</p>
                 </div>
 
                 <div className='mt-15'>
@@ -43,9 +43,9 @@ const Footer = () => {
 
             </div>
             <hr className=' w-[90%] opacity-40  mx-auto mb-2'></hr>
-            <div className='flex justify-between container mx-auto items-center mt-6'>
+            <div className='flex flex-col md:flex-row gap-2 md:justify-between container mx-auto items-center mt-6'>
                 <h1 className='text-gray-300'>© 2026 QurbaniHat. All rights reserved.</h1>
-                <div className='flex gap-3 text-xl text-gray-300'>
+                <div className='flex gap-3 text-[16px] md:text-xl text-gray-300 mb-2'>
                     <FaFacebook/>
                     <FaXTwitter/>
                     <FaInstagram/>

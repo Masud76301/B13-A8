@@ -11,14 +11,14 @@ const FeaturedAnimals = async () => {
 
     return (
         <div className="container mx-auto my-10">
-            <div className="flex justify-between">
-                <div>
-                    <h1 className="text-2xl font-semibold">Featured Animals</h1>
-                    <p>Hand-picked healthy livestock for Qurbani</p>
+            <div className="flex flex-col md:flex-row gap-2 items-center md:justify-between">
+                <div className="md:mx-8 lg:mx-1">
+                    <h1 className="text-2xl text-center md:text-left font-semibold">Featured Animals</h1>
+                    <p className=" text-[14px] md:text-[16px] text-center md:text-left">Hand-picked healthy livestock for Qurbani</p>
                 </div>
-                <Link href="/all-animal"><Button size="sm" variant="outline" className='hover:bg-amber-50 rounded-md'>See All <ArrowRight /></Button></Link>
+                <Link href="/all-animal" className="md:mx-8 lg:mx-1"><Button size="sm" variant="outline" className='hover:bg-amber-50 rounded-md'>See All <ArrowRight /></Button></Link>
             </div>
-            <div className="grid grid-cols-4 gap-3 my-10">
+            <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3 my-10">
 
                 {FeaturedAnimals.map(animal => <AnimalCard key={animal.id} animal={animal}></AnimalCard>)}
             </div>

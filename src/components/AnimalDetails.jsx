@@ -5,8 +5,8 @@ import { TbCurrencyTaka } from 'react-icons/tb';
 
 const AnimalDetails = ({ animal }) => {
     return (
-        <div className='grid grid-cols-2 gap-8 '>
-            <div className='relative w-full h-[80%] rounded-md aspect-square'>
+        <div className='grid grid-cols-1 lg:grid-cols-2 gap-8  '>
+            <div className='relative w-[80vw] mx-auto  lg:w-full h-[80%] rounded-md aspect-square'>
                 <Image
                     src={animal.image}
                     alt={animal.name}
@@ -16,7 +16,7 @@ const AnimalDetails = ({ animal }) => {
                 />
             </div>
 
-            <div className='space-y-5'>
+            <div className='space-y-5 w-[90vw] lg:w-full'>
                 <h1 className='text-3xl font-bold'> {animal.name}</h1>
                 <p className="text-2xl text-green-700 font-bold flex gap-1 items-center"><TbCurrencyTaka />{animal.price}</p>
                 <div className='grid grid-cols-3 gap-3 text-center'>
@@ -44,7 +44,7 @@ const AnimalDetails = ({ animal }) => {
                     <Chip size="lg" className='text-green-700 font-semibold bg-green-200'>Vet Certified</Chip>
                 </div>
 
-                <div className='bg-green-50  p-4 rounded-xl text-green-700 flex gap-2'>
+                <div className='bg-green-50  p-4 rounded-xl text-green-700 flex gap-2 mb-10'>
                     <h1><span className='font-semibold'>Farm</span> : Green Valley Farm, {animal.location}</h1>
                     <Separator orientation="vertical" className='bg-green-700' />
                     <p><span className='font-semibold'>Available</span> : Yes</p>

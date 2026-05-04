@@ -15,15 +15,15 @@ const NavBar = () => {
     }
 
     return (
-        <div className='bg-white shadow h-16 p-3 '>
-            <div className=' container mx-auto flex justify-between items-center '>
+        <div className='bg-white shadow h-auto md:h-16 p-3 '>
+            <div className=' container mx-auto flex flex-col md:flex-row gap-2 md:justify-between items-center '>
                 {/* Logo */}
                 <div className=''>
-                    <h1 className='text-2xl font-bold text-green-600 flex gap-2 items-center justify-center '><GiGoat className='text-3xl'></GiGoat> QuarbaniHat</h1>
+                    <h1 className='flex text-xl md:text-2xl font-bold text-green-600  gap-2 items-center justify-center '><GiGoat className='text-3xl hidden md:block'></GiGoat> <span >QuarbaniHat</span> </h1>
                 </div>
 
                 {/* Link */}
-                <div>
+                <div className='md:block'>
                     <ul className='space-x-2'>
                         <Link href="/"><Button size="sm" variant='outline' className='hover:bg-amber-50 rounded-md'>Home</Button></Link>
                         <Link href="/all-animal"><Button size="sm" variant="outline" className='hover:bg-amber-50 rounded-md'>All Animals</Button></Link>

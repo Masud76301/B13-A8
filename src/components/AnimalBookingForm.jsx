@@ -10,7 +10,7 @@ const AnimalBookingForm = () => {
     };
     return (
         <Form
-            className="flex w-[40%] flex-col gap-4"
+            className="flex w-auto md:w-[40%] flex-col gap-4"
             render={(props) => <form {...props} data-custom="foo" />}
             onSubmit={onSubmit}
         >

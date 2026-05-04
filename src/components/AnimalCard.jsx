@@ -9,7 +9,7 @@ import { TbCurrencyTaka } from "react-icons/tb";
 const AnimalCard = ({ animal }) => {
     return (
 
-        <Card className="rounded-xl border">
+        <Card className="rounded-xl border w-[90vw] mx-auto md:mx-7 lg:mx-1 md:w-auto">
             <div className="relative w-full aspect-square">
                 <Image src={animal.image}  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" fill alt={animal.name} className="rounded-xl object-cover" />
                 <Chip className="absolute right-5 top-2">{animal.category}</Chip>

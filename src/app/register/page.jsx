@@ -1,5 +1,6 @@
 
 "use client";
+import GoogleLogin from "@/components/GoogleLogin";
 import { authClient } from "@/lib/auth-client";
 import { Check } from "@gravity-ui/icons";
 import { Button, Description, FieldError, Form, Input, Label, TextField } from "@heroui/react";
@@ -14,26 +15,26 @@ const RegisterPage = () => {
         const { name, email, photo, password } = data;
         const { data: res, error } = await authClient.signUp.email({
             name: name,
-            email: email, 
+            email: email,
             password: password,
             image: photo,
             callbackURL: "/",
         });
-        if(error){
+        if (error) {
             toast.error(error.message);
         }
-        if(res){
+        if (res) {
             toast.success('Registration Complete')
         }
     }
     return (
-        <div className=" h-auto m-auto border shadow-md p-10 ">
+        <div className=" w-[90vw] md:w-auto mx-auto border shadow-md p-10 my-10">
 
             <h1 className="text-center text-green-600 font-semibold text-xl">QurbaniHat</h1>
             <h1 className="text-2xl font-bold text-center mt-4">Create account</h1>
             <p className="mb-6 text-[14px] text-center">Join thousands of families for Qurbani </p>
-          
-            <Form className="flex w-96 flex-col gap-4 m-auto" onSubmit={handleSubmit(handleRegisterFun)}>
+
+            <Form className="flex w-auto md:w-80 lg:w-96  flex-col gap-4 m-auto" onSubmit={handleSubmit(handleRegisterFun)}>
 
                 <TextField
                     isRequired
@@ -111,6 +112,7 @@ const RegisterPage = () => {
             </Form>
             <p className="text-center mt-5">-or-</p>
             <p className="text-center">Already have an account? <Link className="text-green-600 font-semibold" href="/login">Login</Link></p>
+            <GoogleLogin></GoogleLogin>
         </div>
     );
 };
